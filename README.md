@@ -137,7 +137,7 @@ type Equals<Type1, Type2> =
 
 This works due to the determination of assignability of conditional types being deferred when `T` is not known. Behind the scenes, the compiler will evaluate if both conditional types have the same constraint *and* that the true and false branches of both conditions are the same type.
 
-**-- check this with Andrew**
+**-- see https://stackoverflow.com/questions/64947040/typescript-testing-conditional-type-equality-understanding-the-syntax/64947162#64947162 IS THIS CORRECT / CAN THIS BE RELIED UPON BEHAVIOUR-WISE?**
 
 Now we have a mechanism for comparing types.  Awesome.  Now let's use it; we'll to enforce that our imported JSON module is of the same type as our interface like so:
 
